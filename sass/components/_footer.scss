@@ -1,0 +1,142 @@
+footer.site-footer {
+    background-color: $bg-black;
+    position: relative;
+
+
+    .mail-info {
+        padding: 80px 0;
+        text-align: center;
+
+        h2 {
+            font-size: 80px;
+            font-weight: bold;
+        }
+
+        .mailto {
+            font-size: 48px;
+            color: $color-text-light-01;
+            background: linear-gradient(to right, #DA8B10, #E7A723);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+    }
+
+
+    .site-info {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0;
+        border-top: 1px solid $bg-hr;
+
+        .copyright {
+            color: $color-text-light-03;
+            font-size: 16px;
+
+            a {
+                font-weight: bold;
+
+                &:active,
+                &:focus,
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+
+.scroll-top {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+
+    .scroll-top-icon {
+        margin: auto;
+        margin-top: 8px;
+        width: 24px;
+        height: 24px;
+        background: url(svg/icon-arrow-top.svg) no-repeat center;
+        background-size: 24px;
+        opacity: 0.7;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: #eee;
+
+        .scroll-top-icon {
+            opacity: 1;
+        }
+
+    }
+}
+
+/*--------------------------------------------------------------
+# responsive - Tablet
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+
+    footer.site-footer {
+        .mail-info {
+            padding: 40px 0;
+        }
+
+        .mailto {
+            font-size: 32px;
+        }
+
+        .site-info {
+            padding: 20px 0;
+
+            .copyright {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# responsive - Mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 480px) {
+
+    footer.site-footer {
+        .mail-info {
+
+            padding: 40px 0;
+
+            h2 {
+                font-size: 40px;
+            }
+
+            .mailto {
+                font-size: 20px;
+            }
+        }
+
+
+
+        .site-info {
+            display: block;
+            padding: 20px 0;
+
+            .copyright {
+                margin-top: 40px;
+                font-size: 14px;
+            }
+        }
+    }
+}

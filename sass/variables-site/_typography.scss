@@ -1,0 +1,177 @@
+$font-main: 'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Neo Gothic', sans-serif;
+$font-serif: 'Playfair Display', serif;
+
+$font-code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font-pre: "Courier 10 Pitch", Courier, monospace;
+$font-line-height-head: 1.25;
+$font-line-height-body: 1.6;
+$font-line-height-pre: 1.5;
+
+html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+body {
+    font-size: 16px;
+    line-height: $font-line-height-body;
+    font-family: $font-main;
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+    color: $color-text-light-01;
+    line-height: $font-line-height-body;
+}
+
+.serif {
+    font-family: $font-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    clear: both;
+    color: $color-text-light-01;
+    font-weight: 400;
+    line-height: $font-line-height-head;
+    margin-top: 0;
+    margin-bottom: 8px;
+    letter-spacing: -0.04px;
+
+    a {
+        font-weight: inherit;
+        color: inherit;
+    }
+}
+
+.hero-title {
+    font-size: 36px;
+    line-height: 110%;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: $color-text-light-02;
+    // margin:0;
+}
+
+a {
+    transition: all 0.3s;
+    text-decoration: none;
+    color: $color-link;
+
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:hover,
+    &:active {
+        outline: 0;
+    }
+}
+
+blockquote {
+    background-color: transparent;
+    padding-left: 12px;
+    border-left: 3px solid $color-text-secondary;
+    margin: 20px 0;
+
+    p {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+    }
+}
+
+/*--------------------------------------------------------------
+# responsive - Tablet
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {}
+
+/*--------------------------------------------------------------
+# responsive - Mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 480px) {
+
+    .hero-title {
+        font-size: 48px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .archive-description {
+        font-size: 20px;
+    }
+
+    .category-title {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    h6 {
+        font-size: 16px;
+    }
+
+
+    p {
+        font-size: 16px;
+    }
+}

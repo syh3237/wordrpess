@@ -1,0 +1,224 @@
+.updated:not(.published) {
+    display: none;
+}
+
+.page-header {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+
+    .home & {
+        padding-top: 0;
+
+        .container {
+            padding-top: 140px;
+        }
+    }
+
+    &.page-cover-img {
+        margin-bottom: 80px;
+    }
+
+    .page-category {
+        margin-bottom: 20px;
+
+        a {
+            color: $color-text-light-02;
+        }
+    }
+
+    .hero-title {
+        margin-bottom: 20px;
+
+        .serif {
+            background: linear-gradient(to right, #DA8B10, #E7A723);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .hero-deco {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        z-index: -1;
+
+        div[class^="deco-"] {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+        }
+
+        .deco-01 {
+            right: 70%;
+            top: 100px;
+            background: url(img/home-deco-01.png) no-repeat center;
+            background-size: contain;
+        }
+
+        .deco-02 {
+            left: 45%;
+            top: 0;
+            background: url(img/home-deco-02.png) no-repeat center;
+            background-size: contain;
+        }
+
+        .deco-03 {
+            left: 70%;
+            top: 80px;
+            background: url(img/home-deco-03.png) no-repeat center;
+            background-size: contain;
+        }
+    }
+
+    .archive-description {
+        color: $color-text-light-03;
+    }
+
+    .page-title {
+        font-size: 88px;
+        margin-bottom: 12px;
+        color: $color-text-light-01;
+    }
+
+    .page-desc {
+        margin-top: 20px;
+        font-size: 14px;
+        color: $color-text-light-02;
+
+        strong {
+            font-weight: 700;
+            color: $color-text-light-02;
+            margin-left: 10px;
+        }
+    }
+}
+
+// section
+
+.category-title-wrap {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .category-title {
+        margin: 0;
+        color: $color-text-light-02;
+    }
+}
+
+.about-section {
+    padding: 120px 0;
+
+    // overflow: hidden;
+    .text-wrap {
+        padding: 0 80px;
+
+        p {
+            max-width: 400px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .img-wrap {
+        img {
+            margin: auto;
+        }
+    }
+}
+
+/* 404 */
+.error404 {
+
+    .text-wrap {
+        text-align: center;
+    }
+
+    .error404-graphic {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        background: url(img/img-empty.png) no-repeat center;
+        background-size: contain;
+
+    }
+
+}
+
+/* Search */
+.search-results {
+
+    .page-header {
+
+        span {
+            color: $color-text-light-03;
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+# responsive - Tablet
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {}
+
+
+/*--------------------------------------------------------------
+# responsive - Mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 480px) {
+
+
+    .home .page-header .container {
+        padding-top: 100px;
+    }
+
+    .page-header {
+        .hero-deco {
+            overflow-x: hidden;
+
+            div[class^="deco-"] {
+                width: 80px;
+                height: 80px;
+            }
+
+            .deco-01 {
+                top: 60px;
+                right: 85%;
+            }
+
+            .deco-03 {
+                top: 50px;
+                left: 85%;
+            }
+        }
+
+        .page-title {
+            font-size: 56px;
+        }
+
+        .page-desc {
+            font-size: 14px;
+        }
+    }
+
+    .about-section {
+        padding: 40px 0;
+
+        .img-wrap {
+            padding: 20px;
+        }
+
+        .text-wrap {
+            padding: 0;
+            margin-top: 20px;
+        }
+    }
+}
